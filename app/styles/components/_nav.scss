@@ -1,0 +1,20 @@
+.top-bar {
+  background-color: $nav-background;
+
+  ul {
+    background-color: $nav-background;
+
+    a {
+      color: #FFF;
+    }
+  }
+
+  .active-link {
+    font-weight: bold;
+  }
+
+  .credits-link {
+    display: inline;
+    padding: 0;
+  }
+}
