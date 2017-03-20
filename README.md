@@ -1,4 +1,6 @@
-# React + Foundation Boilerplate
+# React Timer App
+
+[DEMO](http://naffiq-react-timer.herokuapp.com)
 
 Includes react router, Foundation CSS framework and SASS loader
 
