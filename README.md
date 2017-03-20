@@ -1,4 +1,5 @@
 # React Timer App
+[![Build Status](https://travis-ci.org/naffiq/react-timer.svg?branch=master)](https://travis-ci.org/naffiq/react-timer)
 
 [DEMO](http://naffiq-react-timer.herokuapp.com)
 
