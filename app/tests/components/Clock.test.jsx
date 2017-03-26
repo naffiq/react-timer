@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import { shallow } from 'enzyme';
 import expect from 'expect';
 import enzymify from 'expect-enzyme';
-import $ from 'jQuery';
+import $ from 'jquery';
 import TestUtils from 'react-addons-test-utils';
 
 
