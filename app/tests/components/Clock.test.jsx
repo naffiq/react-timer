@@ -1,10 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { shallow } from 'enzyme';
 import expect from 'expect';
-import $ from 'jquery';
+import enzymify from 'expect-enzyme';
+import $ from 'jQuery';
 import TestUtils from 'react-addons-test-utils';
 
+
 import Clock from 'Clock';
+
+expect.extend(enzymify)
 
 describe('Clock', () => {
   it('should exist', () => {
@@ -13,6 +18,7 @@ describe('Clock', () => {
 
   describe('render', () => {
     it('should render clock to output', () => {
+
         let clock = TestUtils.renderIntoDocument(<Clock totalSeconds={61}/>);
         let $el = $(ReactDOM.findDOMNode(clock));
         let actualText = $el.find('.clock-text').text();
