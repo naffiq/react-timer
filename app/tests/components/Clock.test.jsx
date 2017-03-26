@@ -18,18 +18,17 @@ describe('Clock', () => {
 
   describe('render', () => {
     it('should render clock to output', () => {
-
-        let clock = TestUtils.renderIntoDocument(<Clock totalSeconds={61}/>);
-        let $el = $(ReactDOM.findDOMNode(clock));
-        let actualText = $el.find('.clock-text').text();
+        var clock = TestUtils.renderIntoDocument(<Clock totalSeconds={61}/>);
+        var $el = $(ReactDOM.findDOMNode(clock));
+        var actualText = $el.find('.clock-text').text();
 
         expect(actualText).toEqual('01:01');
     });
 
     it('should render clock to output with initial value', () => {
-        let clock = TestUtils.renderIntoDocument(<Clock/>);
-        let $el = $(ReactDOM.findDOMNode(clock));
-        let actualText = $el.find('.clock-text').text();
+        var clock = TestUtils.renderIntoDocument(<Clock/>);
+        var $el = $(ReactDOM.findDOMNode(clock));
+        var actualText = $el.find('.clock-text').text();
 
         expect(actualText).toEqual('00:00');
     });
