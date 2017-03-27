@@ -3,7 +3,7 @@ import Clock from 'Clock';
 import CountdownForm from 'CountdownForm';
 
 const Countdown = React.createClass({
-  getInitialState: () => {
+  getInitialState: function () {
     return {
       count: 0
     };

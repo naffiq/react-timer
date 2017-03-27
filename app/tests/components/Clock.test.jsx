@@ -6,8 +6,6 @@ import TestUtils from 'react-addons-test-utils';
 
 import Clock from 'Clock';
 
-expect.extend(enzymify)
-
 describe('Clock', () => {
   it('should exist', () => {
     expect(Clock).toExist();
