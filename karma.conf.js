@@ -7,11 +7,12 @@ module.exports = function (config) {
     frameworks: ['mocha'],
     files: [
       'node_modules/jquery/dist/jquery.min.js',
-      'node_modules/foundation-sites/dist/foundation.min.js',
+      'node_modules/foundation-sites/dist/js/foundation.min.js',
       'app/tests/**/*.test.jsx'
     ],
     preprocessors: {
-      'app/tests/**/*.test.jsx': ['babel', 'webpack', 'sourcemap']
+      'app/**/*.test.jsx': ['webpack', 'sourcemap']
+      // 'app/tests/**/*.test.jsx': ['webpack', 'sourcemap']
     },
     reporters: ['mocha'],
     client: {
