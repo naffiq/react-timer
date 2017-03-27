@@ -1,14 +1,32 @@
 import React from 'react';
 import Clock from 'Clock';
+import CountdownForm from 'CountdownForm';
 
-var Countdown = (props) => {
-  return (
-    <div>
-      <h1 className="text-center page-title">Countdown</h1>
+const Countdown = React.createClass({
+  getInitialState: () => {
+    return {
+      count: 0
+    };
+  },
 
-      <Clock totalSeconds={62}/>
-    </div>
-  );
-};
+  handleSetCountDown: function (seconds) {
+    this.setState({
+      count: seconds
+    });
+  },
+
+  render: function () {
+    let {count} = this.state;
+
+    return (
+      <div>
+        <h1 className="text-center page-title">Countdown</h1>
+
+        <Clock totalSeconds={count}/>
+        <CountdownForm onSetCountdown={this.handleSetCountDown}/>
+      </div>
+    );
+  }
+});
 
 module.exports = Countdown;
