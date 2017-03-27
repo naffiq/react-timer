@@ -5,9 +5,14 @@ module.exports = function (config) {
     browsers: ['Firefox'],
     singleRun: true,
     frameworks: ['mocha'],
-    files: ['app/tests/**/*.test.jsx'],
+    files: [
+      'node_modules/jquery/dist/jquery.min.js',
+      'node_modules/foundation-sites/dist/js/foundation.min.js',
+      'app/tests/**/*.test.jsx'
+    ],
     preprocessors: {
-      'app/tests/**/*.test.jsx': ['webpack', 'sourcemap']
+      'app/**/*.test.jsx': ['webpack', 'sourcemap']
+      // 'app/tests/**/*.test.jsx': ['webpack', 'sourcemap']
     },
     reporters: ['mocha'],
     client: {

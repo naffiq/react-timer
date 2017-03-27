@@ -2,7 +2,7 @@ import React from 'react';
 
 import Nav from 'Nav';
 
-var Main = (props) => {
+const Main = (props) => {
   return (
     <div>
       <Nav />

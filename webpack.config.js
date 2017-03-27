@@ -8,6 +8,10 @@ module.exports = {
   ],
   externals: {
     jquery: 'jQuery',
+    'cheerio': 'window',
+    'react/addons': true,
+    'react/lib/ExecutionEnvironment': true,
+    'react/lib/ReactContext': true
   },
   plugins: [
     new webpack.ProvidePlugin({
@@ -27,6 +31,7 @@ module.exports = {
       Countdown: 'app/components/Countdown',
       Nav: 'app/components/Nav',
       Clock: 'app/components/Clock',
+      CountdownForm: 'app/components/CountdownForm',
       applicationStyles: 'app/styles/app.scss'
     },
     extensions: ['', '.js', '.jsx']
