@@ -31,6 +31,7 @@ module.exports = {
       Countdown: 'app/components/Countdown',
       Nav: 'app/components/Nav',
       Clock: 'app/components/Clock',
+      Controls: 'app/components/Controls',
       CountdownForm: 'app/components/CountdownForm',
       applicationStyles: 'app/styles/app.scss'
     },
